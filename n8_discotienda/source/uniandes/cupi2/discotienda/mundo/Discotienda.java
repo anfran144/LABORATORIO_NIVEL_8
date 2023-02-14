@@ -538,8 +538,7 @@ public class Discotienda
     	PrintWriter pluma = new PrintWriter(archivo);
     	
     	// Escribir con la pluma en el archivo
-    	pluma.println("Reporte de Discos Costosos"
-    			+ "");
+    	pluma.println("Reporte de Discos Costosos");
     	pluma.println("==========================");
     	
     	// Escribir un reporte de discos costosos con nombre, artista y género
