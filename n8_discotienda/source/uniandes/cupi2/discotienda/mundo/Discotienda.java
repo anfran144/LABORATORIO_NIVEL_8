@@ -591,7 +591,7 @@ public class Discotienda
 				generarInformeDiscosCostosos(usuario);
 				mensaje = "Reporte Generado Satisfactoriamente";
 			}else {
-				mensaje = "Graicas!";
+				mensaje = "Gracias!";
 			}
     		return mensaje;
 		} catch (Exception e) {

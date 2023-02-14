@@ -1,14 +1,14 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * $Id: InterfazDiscotienda.java,v 1.12 2007/04/13 03:56:39 carl-veg Exp $
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación 
+ * Universidad de los Andes (Bogotï¿½ - Colombia)
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n 
  * Licenciado bajo el esquema Academic Free License version 2.1 
  *
  * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
  * Ejercicio: n8_discotienda 
- * Autor: Nicolás López - 06/12/2005 
- * Autor: Mario Sánchez - 26/01/2005
+ * Autor: Nicolï¿½s Lï¿½pez - 06/12/2005 
+ * Autor: Mario Sï¿½nchez - 26/01/2005
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 package uniandes.cupi2.discotienda.interfaz;
@@ -45,7 +45,7 @@ public class InterfazDiscotienda extends JFrame
     private Discotienda discotienda;
 
     /**
-     * Es una referencia al disco de la cual se están mostrando los datos
+     * Es una referencia al disco de la cual se estï¿½n mostrando los datos
      */
     private Disco discoSeleccionado;
 
@@ -54,12 +54,12 @@ public class InterfazDiscotienda extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Es el panel con los botones para las extensiones de la aplicación
+     * Es el panel con los botones para las extensiones de la aplicaciï¿½n
      */
     private PanelExtension panelExtension;
 
     /**
-     * Es el panel con la información del disco seleccionado
+     * Es el panel con la informaciï¿½n del disco seleccionado
      */
     private PanelDiscos panelDiscos;
 
@@ -83,7 +83,7 @@ public class InterfazDiscotienda extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Construye la interfaz de la aplicación
+     * Construye la interfaz de la aplicaciï¿½n
      * @param d es la discotienda que se va a mostrar
      */
     public InterfazDiscotienda( Discotienda d )
@@ -94,7 +94,7 @@ public class InterfazDiscotienda extends JFrame
         panelImagen = new PanelImagen( );
         add( panelImagen, BorderLayout.NORTH );
 
-        // Panel central con los datos del disco, de las canciones y el botón para cargar un pedido
+        // Panel central con los datos del disco, de las canciones y el botï¿½n para cargar un pedido
         JPanel panelCentral = new JPanel( new BorderLayout( ) );
         add( panelCentral, BorderLayout.CENTER );
 
@@ -123,7 +123,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
 
     /**
@@ -138,7 +138,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Muestra el diálogo para agregar un nuevo disco a la discotienda
+     * Muestra el diï¿½logo para agregar un nuevo disco a la discotienda
      */
     public void mostrarDialogoAgregarDisco( )
     {
@@ -148,7 +148,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Muestra el diálogo para agregar una nueva canción al disco en el panel de detalles del disco
+     * Muestra el diï¿½logo para agregar una nueva canciï¿½n al disco en el panel de detalles del disco
      */
     public void mostrarDialogoAgregarCancion( )
     {
@@ -164,7 +164,7 @@ public class InterfazDiscotienda extends JFrame
      * @param artista el artista del nuevo disco
      * @param genero el genero del nuevo disco
      * @param imagen el nombre de la imagen asociada al nuevo disco
-     * @return Retorna true si la canción se pudo agregar. Esto sirve para saber si se debe cerrar el diálogo.
+     * @return Retorna true si la canciï¿½n se pudo agregar. Esto sirve para saber si se debe cerrar el diï¿½logo.
      */
     public boolean crearDisco( String nombreDisco, String artista, String genero, String imagen )
     {
@@ -184,15 +184,15 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Crea una nueva canción en el disco que se muestra en los detalles de disco en la discotienda <br>
-     * <b>pre: <b>No debe haber otra canción con el mismo nombre en el disco
-     * @param nombre el nombre de la nueva canción
-     * @param minutos el número de minutos de duración de la canción
-     * @param segundos el número de segundos de duración de la canción
-     * @param precio el precio de la canción
-     * @param tamano el tamaño en MB de la canción
-     * @param calidad la calidad de la canción en KBps
-     * @return Retorna true si la canción se pudo agregar. Esto sirve para saber si se debe cerrar el diálogo.
+     * Crea una nueva canciï¿½n en el disco que se muestra en los detalles de disco en la discotienda <br>
+     * <b>pre: <b>No debe haber otra canciï¿½n con el mismo nombre en el disco
+     * @param nombre el nombre de la nueva canciï¿½n
+     * @param minutos el nï¿½mero de minutos de duraciï¿½n de la canciï¿½n
+     * @param segundos el nï¿½mero de segundos de duraciï¿½n de la canciï¿½n
+     * @param precio el precio de la canciï¿½n
+     * @param tamano el tamaï¿½o en MB de la canciï¿½n
+     * @param calidad la calidad de la canciï¿½n en KBps
+     * @return Retorna true si la canciï¿½n se pudo agregar. Esto sirve para saber si se debe cerrar el diï¿½logo.
      */
     public boolean crearCancion( String nombre, int minutos, int segundos, double precio, double tamano, int calidad )
     {
@@ -217,9 +217,9 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Vende una canción a una persona
-     * @param disco el disco al que pertenece la canción que se va a vender - disco != null
-     * @param cancion la canción que se va a vender - cancion != null
+     * Vende una canciï¿½n a una persona
+     * @param disco el disco al que pertenece la canciï¿½n que se va a vender - disco != null
+     * @param cancion la canciï¿½n que se va a vender - cancion != null
      */
     public void venderCancion( Disco disco, Cancion cancion )
     {
@@ -231,22 +231,22 @@ public class InterfazDiscotienda extends JFrame
                 try
                 {
                     String archivoFactura = discotienda.venderCancion( disco, cancion, email, RUTA_FACTURAS );
-                    JOptionPane.showMessageDialog( this, "La factura se guardó en el archivo: " + archivoFactura, "Factura Guardada", JOptionPane.INFORMATION_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "La factura se guardï¿½ en el archivo: " + archivoFactura, "Factura Guardada", JOptionPane.INFORMATION_MESSAGE );
                 }
                 catch( IOException e )
                 {
-                    JOptionPane.showMessageDialog( this, "Se presentó un problema guardando el archivo de la factura:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "Se presentï¿½ un problema guardando el archivo de la factura:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
                 }
             }
             else
             {
-                JOptionPane.showMessageDialog( this, "El email indicado no es válido", "Error", JOptionPane.ERROR_MESSAGE );
+                JOptionPane.showMessageDialog( this, "El email indicado no es vï¿½lido", "Error", JOptionPane.ERROR_MESSAGE );
             }
         }
     }
 
     /**
-     * Este método se encarga de cargar la información de un pedido
+     * Este mï¿½todo se encarga de cargar la informaciï¿½n de un pedido
      */
     public void cargarPedido( )
     {
@@ -261,26 +261,26 @@ public class InterfazDiscotienda extends JFrame
                 try
                 {
                     String archivoFactura = discotienda.venderListaCanciones( archivo, RUTA_FACTURAS );
-                    JOptionPane.showMessageDialog( this, "La factura se guardó en el archivo: " + archivoFactura, "Factura Guardada", JOptionPane.INFORMATION_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "La factura se guardï¿½ en el archivo: " + archivoFactura, "Factura Guardada", JOptionPane.INFORMATION_MESSAGE );
                 }
                 catch( FileNotFoundException e )
                 {
-                    JOptionPane.showMessageDialog( this, "Se presentó un problema leyendo el archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "Se presentï¿½ un problema leyendo el archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
                 }
                 catch( IOException e )
                 {
-                    JOptionPane.showMessageDialog( this, "Se presentó un problema leyendo el archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "Se presentï¿½ un problema leyendo el archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
                 }
                 catch( ArchivoVentaException e )
                 {
-                    JOptionPane.showMessageDialog( this, "Se presentó un problema debido al formato del archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog( this, "Se presentï¿½ un problema debido al formato del archivo:\n" + e.getMessage( ), "Error", JOptionPane.ERROR_MESSAGE );
                 }
             }
         }
     }
 
     /**
-     * Este método se encarga de salvar la información de la discotienda, justo antes de cerrar la aplicación
+     * Este mï¿½todo se encarga de salvar la informaciï¿½n de la discotienda, justo antes de cerrar la aplicaciï¿½n
      */
     public void dispose( )
     {
@@ -292,7 +292,7 @@ public class InterfazDiscotienda extends JFrame
         catch( Exception e )
         {
             setVisible( true );
-            int respuesta = JOptionPane.showConfirmDialog( this, "Problemas salvando la información de la discotienda:\n" + e.getMessage( ) + "\n¿Quiere cerrar el programa sin salvar?", "Error", JOptionPane.YES_NO_OPTION );
+            int respuesta = JOptionPane.showConfirmDialog( this, "Problemas salvando la informaciï¿½n de la discotienda:\n" + e.getMessage( ) + "\nï¿½Quiere cerrar el programa sin salvar?", "Error", JOptionPane.YES_NO_OPTION );
             if( respuesta == JOptionPane.YES_OPTION )
             {
                 super.dispose( );
@@ -301,11 +301,11 @@ public class InterfazDiscotienda extends JFrame
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de Extensiï¿½n
     // -----------------------------------------------------------------
 
     /**
-     * Ejecuta el punto de extensión 1
+     * Ejecuta el punto de extensiï¿½n 1
      */
     public void reqFuncOpcion1( )
     {
@@ -314,16 +314,16 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Ejecuta el punto de extensión 2
+     * Ejecuta el punto de extensiï¿½n 2
      */
     public void reqFuncOpcion2( )
     {
         String resultado = discotienda.metodo2( );
-        JOptionPane.showMessageDialog( this, resultado, "Respuesta", JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog( this, resultado, "Respuesta", JOptionPane.WARNING_MESSAGE );
     }
 
     /**
-     * Ejecuta el punto de extensión 3
+     * Ejecuta el punto de extensiï¿½n 3
      */
     public void reqFuncOpcion3( )
     {
@@ -332,7 +332,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Ejecuta el punto de extensión 4
+     * Ejecuta el punto de extensiï¿½n 4
      */
     public void reqFuncOpcion4( )
     {
@@ -341,7 +341,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Ejecuta el punto de extensión 5
+     * Ejecuta el punto de extensiï¿½n 5
      */
     public void reqFuncOpcion5( )
     {
@@ -350,7 +350,7 @@ public class InterfazDiscotienda extends JFrame
     }
 
     /**
-     * Ejecuta el punto de extensión 6
+     * Ejecuta el punto de extensiï¿½n 6
      */
     public void reqFuncOpcion6( )
     {
@@ -363,8 +363,8 @@ public class InterfazDiscotienda extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Ejecuta la aplicación
-     * @param args son parámetros de ejecución de la aplicación. No se usan en este programa
+     * Ejecuta la aplicaciï¿½n
+     * @param args son parï¿½metros de ejecuciï¿½n de la aplicaciï¿½n. No se usan en este programa
      */
     public static void main( String[] args )
     {
