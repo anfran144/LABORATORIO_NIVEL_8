@@ -526,7 +526,7 @@ public class Discotienda
     	}
     	// Excepciones
     	if (existeGenero==0) {
-    		throw new IOException("NO EXISTE EL GÉNERO" + uGenero);
+    		throw new IOException("NO EXISTE EL GÉNERO " + uGenero);
     	}else if (existeDiscosCostosos==0){
     		throw new IOException("NO EXISTE DISCOS COSTOSOS EN EL GÉNERO " + uGenero);
     	}
