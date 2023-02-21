@@ -569,9 +569,9 @@ public class Discotienda
     
     /**
      * Carga desde un archivo de texto (.txt) un listado de discos a la disco tienda. 
-     * @throws FileNotFoundException -
-     * @throws IOException -
-     * @throws ElementoExisteException - Esta excepción se lanza si ya existe un disco con el mismo nombre
+     * @throws FileNotFoundException - Se lanza esta excepción cuando no existe el archivo indicado.
+     * @throws IOException - Se lanza esta excepción si hay problema en la lectura del archivo.
+     * @throws ElementoExisteException - Se lanza esta excepción se lanza si ya existe un disco con el mismo nombre
      */
     public void cargarListadoDeDiscos() throws FileNotFoundException, IOException, ElementoExisteException{
     	
@@ -604,10 +604,10 @@ public class Discotienda
     // ----------------------------------------------------------------- 
     
     /**
-     * Genera un reporte para
-     * @param pCantidadCanciones
-     * @throws FileNotFoundException
-     * @throws IOException
+     * Genera un reporte de discos que tengan menos de la cantidad de canciones solicitada por el usuario.
+     * @param pCantidadCanciones - Cantidad de canciones que debe ser menor a las dadas por el usuario.
+     * @throws FileNotFoundException - Se lanza esta excepción cuando no existe la ruta especificada del archivo a leer o escribir
+     * @throws IOException - Se lanza esta excepción cuando no hay un disco con a cantidad de canciones menores a las dada por el usuario.
      */
     public void generarReporteDeDiscosPorCantidadDeCanciones(int pCantidadCanciones) throws FileNotFoundException, IOException {
     	
