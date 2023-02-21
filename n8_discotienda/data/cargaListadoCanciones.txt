@@ -1,0 +1,4 @@
+Dark hourse,La Muerte,Rock,./data/imagenes/Antonimo.jpg
+Noche Amor,Sin Bandera,Balada,./data/imagenes/KidsInLove.jpg
+Drimmer,Alan Walker,Electrónica,./data/imagenes/FreedomChild.jpg
+Sendero Oscuro,Dimitry Deans,Hip Hop,./data/imagenes/Witness.jpg

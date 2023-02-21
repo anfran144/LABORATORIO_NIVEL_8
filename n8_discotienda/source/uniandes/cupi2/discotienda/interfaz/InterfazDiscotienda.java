@@ -311,6 +311,7 @@ public class InterfazDiscotienda extends JFrame
     {
         String resultado = discotienda.metodo1( );
         JOptionPane.showMessageDialog( this, resultado, "Respuesta", JOptionPane.INFORMATION_MESSAGE );
+        panelDiscos.refrescarDiscos(discotienda.darDiscos());
     }
 
     /**
